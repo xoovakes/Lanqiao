@@ -13,8 +13,9 @@ public class _1_8_出现k次与出现1次 {
         int len = arr.length;
         char[][] kRadix = new char[len][];
         int k = 3;
-        //转成k进制字符数组
+        //k进制数最大长度
         int maxLen = 0;
+        //转换成k进制数的翻转字符串
         for (int i = 0; i < len; i++) {
             //求每个数字的k进制字符串并翻转，然后转为字符数组
             kRadix[i] = new StringBuilder(Integer.toString(arr[i], k)).reverse().toString().toCharArray();
@@ -23,8 +24,8 @@ public class _1_8_出现k次与出现1次 {
             }
         }
         int[] resArr = new int[maxLen];
+        //i个数的j位数全部加起来
         for (int i = 0; i < len; i++) {
-            //作不进位加法
             for (int j = 0; j < maxLen; j++) {
                 if (j >= kRadix[i].length) {
                     resArr[j] += 0;
@@ -35,6 +36,7 @@ public class _1_8_出现k次与出现1次 {
         }
         int res = 0;
         for(int i=0;i<maxLen;i++){
+            //余k，不进位处理
             res += (resArr[i]%k)*(int)(Math.pow(k,i));
         }
         System.out.println(res);
