@@ -1,12 +1,12 @@
-package AlgorithmIsSoBeautiful;
+package AlgorithmIsSoBeautiful._1_位运算;
 
 import java.util.Scanner;
 
 /**
+ * TODO: 除法没看懂
  * _1_9_课后作业_位运算做加减乘除
  * 整数的,
- * reference:
- * https://www.cnblogs.com/kiven-code/archive/2012/09/15/2686922.html
+ * reference: https://www.cnblogs.com/kiven-code/archive/2012/09/15/2686922.html
  *
  * @author zixi
  * @version 1.0
@@ -56,7 +56,7 @@ public class _1_9_课后作业_位运算做加减乘除 {
         return count;
     }
 
-    //加权累减方法。reference: https://blog.csdn.net/anbenjamin/article/details/105462094
+    //加权累减方法
     private static int chu(int a, int b) {
         //对被除数和除数取绝对值
         int dividend = a < 0 ? add(~a, 1) : a;
@@ -64,7 +64,7 @@ public class _1_9_课后作业_位运算做加减乘除 {
         //获得被除数的反序 比如dividend=101011 invert=1110101,invert最高位会多一个1,
         //这是为了防止dividend=1010,则直接反转为0101,这个时候原来的最低位的0就会丢失
         int invert = 2;
-        while (dividend!=0) {
+        while (dividend != 0) {
             invert |= dividend & 0x1;
             invert = invert << 1;
             dividend = dividend >> 1;
@@ -72,8 +72,7 @@ public class _1_9_课后作业_位运算做加减乘除 {
         int quotient = 0;
         int remainder = 0;
         //排除最高位的1
-        while (invert > 1)
-        {
+        while (invert > 1) {
             remainder = remainder << 1;
             remainder |= invert & 0x1;
             invert = invert >> 1;
@@ -81,7 +80,7 @@ public class _1_9_课后作业_位运算做加减乘除 {
 
             if (remainder >= divisor) {
                 quotient |= 0x1;
-                remainder = remainder-divisor;
+                remainder = remainder - divisor;
             }
         }
         //求商的符号

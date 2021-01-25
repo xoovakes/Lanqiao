@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful.test;
+package AlgorithmIsSoBeautiful._1_位运算.test;
 
 import java.util.Random;
 

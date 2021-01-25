@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful;
+package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
  * TODO
