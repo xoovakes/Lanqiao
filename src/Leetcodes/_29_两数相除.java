@@ -12,4 +12,13 @@ package Leetcodes;
  * @date 21/01/25 下午 5:28
  */
 public class _29_两数相除 {
+    public static void main(String[] args) {
+        int a = 8;
+        int b = 2;
+        _29_两数相除 c = new _29_两数相除();
+        System.out.println("结果："+c.divide(a,b));
+    }
+    public int divide(int dividend, int divisor) {
+        return 1;
+    }
 }
