@@ -13,12 +13,26 @@ package Leetcodes;
  */
 public class _29_两数相除 {
     public static void main(String[] args) {
-        int a = 8;
-        int b = 2;
+        // -2147483648; -1;
+        int a = -2147483648;
+        int b = -1;
         _29_两数相除 c = new _29_两数相除();
-        System.out.println("结果："+c.divide(a,b));
+        System.out.println("结果：" + c.divide(a, b));
     }
+
+    //负数运算，但是超时了
     public int divide(int dividend, int divisor) {
-        return 1;
+        if (dividend == Integer.MIN_VALUE && divisor == -1) {
+            return Integer.MAX_VALUE;
+        }
+        boolean k = (dividend > 0 && divisor > 0) || (dividend < 0 && divisor < 0);
+        int result = 0;
+        dividend = -Math.abs(dividend);
+        divisor = -Math.abs(divisor);
+        while (dividend <= divisor) {
+            dividend -= divisor;
+            result += 1;
+        }
+        return k ? result : -result;
     }
 }
