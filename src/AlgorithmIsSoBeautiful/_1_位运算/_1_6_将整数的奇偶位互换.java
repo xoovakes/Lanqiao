@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
- * TODO
+ * 将整数的奇偶位互换
  *
  * @author zixi
  * @version 1.0

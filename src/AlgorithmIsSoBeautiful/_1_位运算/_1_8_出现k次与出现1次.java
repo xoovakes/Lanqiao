@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
- * TODO
+ * 出现k次与出现1次
  *
  * @author zixi
  * @version 1.0

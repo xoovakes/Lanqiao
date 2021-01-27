@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
- * TODO
+ * 数组中唯一成对的那个数
  *
  * @author zixi
  * @version 1.0

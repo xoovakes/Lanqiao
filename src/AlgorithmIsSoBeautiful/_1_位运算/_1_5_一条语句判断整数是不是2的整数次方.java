@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
- * TODO
+ * 一条语句判断整数是不是2的整数次方
  *
  * @author zixi
  * @version 1.0

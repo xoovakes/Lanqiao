@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
- * TODO
+ * 0到1间浮点实数的二进制表示
  *
  * @author zixi
  * @version 1.0

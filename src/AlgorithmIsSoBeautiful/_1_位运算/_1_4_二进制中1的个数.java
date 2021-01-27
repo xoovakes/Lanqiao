@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._1_位运算;
 
 /**
- * TODO
+ * 二进制中1的个数
  *
  * @author zixi
  * @version 1.0
