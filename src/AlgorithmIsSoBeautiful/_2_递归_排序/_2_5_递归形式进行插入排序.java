@@ -15,8 +15,8 @@ public class _2_5_递归形式进行插入排序 {
         int[] arr = new int[]{45, 65, 23, 46, 74, 27, 84, 68, 96};
         int len = arr.length - 1;
         c.insertSort(arr, len);
-        for (int i = 0; i < arr.length; ++i) {
-            System.out.print(arr[i] + " ");
+        for (int j : arr) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
@@ -26,12 +26,12 @@ public class _2_5_递归形式进行插入排序 {
             return;
         }
         insertSort(arr, k - 1);
-        int x = arr[k];
+        int saved = arr[k];
         int index = k - 1;
-        while (index > -1 && x < arr[index]) {
+        while (index > -1 && saved < arr[index]) {
             arr[index + 1] = arr[index];
             index--;
         }
-        arr[index + 1] = x;
+        arr[index + 1] = saved;
     }
 }
