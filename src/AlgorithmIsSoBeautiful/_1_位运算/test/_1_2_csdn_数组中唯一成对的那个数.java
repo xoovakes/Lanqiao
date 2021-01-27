@@ -3,7 +3,6 @@ package AlgorithmIsSoBeautiful._1_位运算.test;
 import java.util.Random;
 
 /**
- * TODO
  *
  * @author zixi
  * @version 1.0

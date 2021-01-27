@@ -2,6 +2,8 @@ package AlgorithmIsSoBeautiful._2_递归_排序;
 
 /**
  * 递归形式进行插入排序
+ * 1.对前k-1个元素排序
+ * 2.把位置k的元素插入到前面的部分
  *
  * @author zixi
  * @version 1.0
@@ -10,10 +12,26 @@ package AlgorithmIsSoBeautiful._2_递归_排序;
 public class _2_5_递归形式进行插入排序 {
     public static void main(String[] args) {
         _2_5_递归形式进行插入排序 c = new _2_5_递归形式进行插入排序();
+        int[] arr = new int[]{45, 65, 23, 46, 74, 27, 84, 68, 96};
+        int len = arr.length - 1;
+        c.insertSort(arr, len);
+        for (int i = 0; i < arr.length; ++i) {
+            System.out.print(arr[i] + " ");
+        }
         System.out.println();
     }
 
-    public void insertSort(int[] arr, int k){
-
+    public void insertSort(int[] arr, int k) {
+        if (k == 0) {
+            return;
+        }
+        insertSort(arr, k - 1);
+        int x = arr[k];
+        int index = k - 1;
+        while (index > -1 && x < arr[index]) {
+            arr[index + 1] = arr[index];
+            index--;
+        }
+        arr[index + 1] = x;
     }
 }
