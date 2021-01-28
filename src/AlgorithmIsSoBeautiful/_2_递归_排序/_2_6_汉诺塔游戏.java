@@ -2,6 +2,10 @@ package AlgorithmIsSoBeautiful._2_递归_排序;
 
 /**
  * 汉诺塔游戏
+ * 思路：
+ * 1到N-1从A移动到C，B为辅助
+ * 把N从A移动到B
+ * 1到N-1从C移动到B，A为辅助
  *
  * @author zixi
  * @version 1.0
@@ -15,10 +19,10 @@ public class _2_6_汉诺塔游戏 {
 
     /**
      *  把N个盘子从from 移动到to 的路径的打印
-     * @param N
-     * @param from
-     * @param to
-     * @param help
+     * @param N 汉诺塔层数
+     * @param from 从哪
+     * @param to 到哪
+     * @param help 以睡为辅助
      */
     public void printHanoiTower(int N,String from,String to,String help){
         if(N==1){
