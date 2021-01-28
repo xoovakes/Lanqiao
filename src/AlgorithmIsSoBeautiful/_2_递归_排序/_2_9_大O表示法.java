@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._2_递归_排序;
 
 /**
- * TODO
+ * 大O表示法
  *
  * @author zixi
  * @version 1.0
