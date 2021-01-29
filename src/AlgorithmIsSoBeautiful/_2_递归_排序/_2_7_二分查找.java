@@ -9,10 +9,16 @@ package AlgorithmIsSoBeautiful._2_递归_排序;
  */
 public class _2_7_二分查找 {
     public static void main(String[] args) {
+        //统计时间初始化
+        ComputingTime computingTime = new ComputingTime();
+        //排序
         _2_5_递归形式进行插入排序 d = new _2_5_递归形式进行插入排序();
         int[] arr = new int[]{45, 65, 23, 46, 74, 27, 84, 68, 96};
         int len = arr.length - 1;
+        computingTime.begin();
         d.insertSort(arr, len);
+        computingTime.end();
+        //查找
         _2_7_二分查找 c = new _2_7_二分查找();
         int e = c.binarySearch1(arr,0,len,22);
         if(e!=-1){
