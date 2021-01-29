@@ -19,7 +19,7 @@ public class ComputingTime {
 
     public long end(){
         endTime = System.currentTimeMillis() - beginTime;
-        System.out.println(endTime + "ms");
+        System.out.print(endTime + "ms");
         return endTime;
 
     }
