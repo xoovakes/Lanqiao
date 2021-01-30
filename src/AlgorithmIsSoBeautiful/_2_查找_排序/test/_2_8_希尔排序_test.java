@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._2_递归_排序.test;
+package AlgorithmIsSoBeautiful._2_查找_排序.test;
 
 /**
  * 希尔排序_test
@@ -13,5 +13,8 @@ public class _2_8_希尔排序_test {
         int result1 = a/2;
         int result2 = a>>1;
         System.out.println(result1 + " " + result2);
+        int i =1;
+        int j = 2;
+        System.out.println(i=j+1);
     }
 }

@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._2_递归_排序;
+package AlgorithmIsSoBeautiful._2_查找_排序;
 
 /**
  * 方便查看算法的运算时间

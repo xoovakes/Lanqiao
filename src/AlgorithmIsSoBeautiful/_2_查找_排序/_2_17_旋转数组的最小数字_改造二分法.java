@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._2_递归_排序;
+package AlgorithmIsSoBeautiful._2_查找_排序;
 
 /**
  * 旋转数组的最小数字_改造二分法
