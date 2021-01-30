@@ -1,7 +1,9 @@
 package Utils;
 
+import java.util.Arrays;
+
 /**
- * TODO
+ * 工具类
  *
  * @author zixi
  * @version 1.0
@@ -22,6 +24,14 @@ public class myUtils {
             arr[i] = (int) (Math.random() * max + min);
         }
         return arr;
+    }
+
+    /**
+     * 打印整型数组
+     * @param arr 要打印的整型数组
+     */
+    public void printIntArray(int[] arr) {
+        System.out.println(Arrays.toString(arr));
     }
 
     long beginTime;
