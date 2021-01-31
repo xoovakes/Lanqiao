@@ -1,4 +1,4 @@
-package Utils;
+package AlgorithmIsSoBeautiful._2_查找_排序_初级;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package AlgorithmIsSoBeautiful._3_查找_排序_高级;
 
-import Utils.MyUtils;
+import AlgorithmIsSoBeautiful._2_查找_排序_初级.MyUtils;
 
 /**
  * 快排之单向扫描分区法
@@ -14,11 +14,11 @@ public class _3_3_快排之单向扫描分区法 {
         MyUtils u = new MyUtils();
         _3_3_快排之单向扫描分区法 c = new _3_3_快排之单向扫描分区法();
         //
-        int[] arr = u.intRandomArray(16, 1, 10);
-//        int[] arr = new int[]{43,54,234,672,32};
+        int[] arr = u.intRandomArray(10, 1, 10);
+//        int[] arr = new int[]{5,1,2,6,7};
         u.printIntArray(arr);
         u.beginCompute();
-        c.quickSort(arr, 0, arr.length - 1);
+        c.quickSort(arr, 0, arr.length-1);
         u.printIntArray(arr);
         u.endCompute();
     }
@@ -38,15 +38,16 @@ public class _3_3_快排之单向扫描分区法 {
             if (arr[sp] <= arr[p]) {
                 sp++;
             } else {
-                arr[sp] ^= arr[bigger];
-                arr[bigger] ^= arr[sp];
-                arr[sp] ^= arr[bigger];
+                int temp = arr[sp];
+                arr[sp] = arr[bigger];
+                arr[bigger] = temp;
                 bigger--;
             }
         }
-        arr[p] ^= arr[bigger];
-        arr[bigger] ^= arr[p];
-        arr[p] ^= arr[bigger];
+        int temp = arr[p];
+        arr[p] = arr[bigger];
+        arr[bigger] = temp;
+//        System.out.println(Arrays.toString(arr));
         return bigger;
     }
 }
