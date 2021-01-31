@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._2_查找_排序.test;
+package AlgorithmIsSoBeautiful._2_查找_排序_初级.test;
 
 /**
  * 希尔排序_test

@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @version 1.0
  * @date 21/01/30 下午 10:49
  */
-public class myUtils {
+public class MyUtils {
     /**
      * 生成整型的随机数组
      *
