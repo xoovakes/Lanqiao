@@ -1,7 +1,7 @@
 package AlgorithmIsSoBeautiful._3_查找_排序_高级;
 
 /**
- * TODO
+ * 双向快排太短用插排
  *
  * @author zixi
  * @version 1.0
