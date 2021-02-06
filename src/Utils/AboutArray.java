@@ -50,4 +50,16 @@ public class AboutArray {
         arr[a] = arr[b];
         arr[b] = temp;
     }
+
+    /**
+     * 把arr1数组的元素移到arr2里
+     *
+     * @param arr1 旧的数组
+     * @param arr2 新的数组
+     */
+    public static void copyIntArray(int[] arr1, int low1, int[] arr2, int low2, int length) {
+        for (int i = 0; i < length; i++) {
+            arr2[low2+i] = arr1[low1+i];
+        }
+    }
 }
