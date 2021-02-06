@@ -25,8 +25,10 @@ public class AboutArray {
         }
         return arr;
     }
+
     /**
      * 打印整型数组
+     *
      * @param arr 要打印的整型数组
      */
     public static void printIntArray(int[] arr) {
@@ -34,12 +36,16 @@ public class AboutArray {
     }
 
     /**
-     *  交换数组中的元素
+     * 交换数组中的元素
+     *
      * @param arr
      * @param a
      * @param b
      */
-    public static void swapInArray(int[] arr,int a,int b){
+    public static void swapInArray(int[] arr, int a, int b) {
+        if (a == b) {
+            return;
+        }
         int temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
