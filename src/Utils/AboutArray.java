@@ -27,6 +27,45 @@ public class AboutArray {
     }
 
     /**
+     * 随机生成不重复数组
+     *
+     * @param len 数组长度
+     * @param min 最小数字
+     * @param max 最大数字
+     */
+    public static int[] getRandomArrWithoutRepetition(int len, int min, int max) {
+        int[] arr = new int[len];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * (max - min + 1) + min);
+            for (int j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    i--;
+                    break;
+                }
+            }
+        }
+        return arr;
+    }
+
+    /**
+     * 判断一个元素在不在数组中
+     *
+     * @param arr 被找的数组
+     * @param a   那个元素
+     * @return 返回真假
+     */
+    public static boolean indexOf(int[] arr, int a) {
+        boolean inArr = false;
+        for (int k : arr) {
+            if (a == k) {
+                inArr = true;
+                break;
+            }
+        }
+        return inArr;
+    }
+
+    /**
      * 打印整型数组
      *
      * @param arr 要打印的整型数组
@@ -38,9 +77,9 @@ public class AboutArray {
     /**
      * 交换数组中的元素
      *
-     * @param arr
-     * @param a
-     * @param b
+     * @param arr 数组
+     * @param a   交换的元素1
+     * @param b   交换的元素2
      */
     public static void swapInArray(int[] arr, int a, int b) {
         if (a == b) {
@@ -59,7 +98,7 @@ public class AboutArray {
      */
     public static void copyIntArray(int[] arr1, int low1, int[] arr2, int low2, int length) {
         for (int i = 0; i < length; i++) {
-            arr2[low2+i] = arr1[low1+i];
+            arr2[low2 + i] = arr1[low1 + i];
         }
     }
 }
