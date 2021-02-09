@@ -22,8 +22,6 @@ public class _3_9_第k小的数 {
 
     /**
      * 期望O(n),最差O(n^2)
-     *
-     * @return1
      */
     public int selectK(int[] arr, int low, int high, int k) {
         int q = new QuickSort().partition(arr, low, high);
