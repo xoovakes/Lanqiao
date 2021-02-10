@@ -66,6 +66,36 @@ public class AboutArray {
     }
 
     /**
+     * 找出数组中的最大值
+     * @param arr 数组
+     * @return 最大值
+     */
+    public static int maxOf(int[] arr) {
+        int max = arr[0];
+        for (int item : arr) {
+            if (item > max) {
+                max = item;
+            }
+        }
+        return max;
+    }
+
+    /**
+     * 找出数组中的最小值
+     * @param arr 数组
+     * @return 最小值
+     */
+    public static int minOf(int[] arr) {
+        int min = arr[0];
+        for (int item : arr) {
+            if (item < min) {
+                min = item;
+            }
+        }
+        return min;
+    }
+
+    /**
      * 打印整型数组
      *
      * @param arr 要打印的整型数组
