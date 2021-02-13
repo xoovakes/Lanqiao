@@ -2,12 +2,11 @@ package AlgorithmIsSoBeautiful._3_查找_排序_高级;
 
 /**
  * _3_19_计数排序
- * 思路：
- * 开辟新的空间，空间大小为max(source)
- * 时间复杂度：
- * 空间复杂度：
- * 稳定性：
- * 改进1：如果要优化一下空间，可以求minOf(source),helper的长度为max-min+1,这样能短一点
+ * 时间复杂度：扫描一次source，扫描一次helper，复杂度为N+k
+ * 空间复杂度：辅助空间k，k=maxOf(source)
+ * 非原址排序
+ * 稳定性：相同元素不会出现交叉，非原址都是拷来拷去
+ * 改进：如果要优化一下空间，可以求minOf(source),helper的长度为max-min+1,这样能短一点
  * 计数排序有缺陷，数据较为密集或范围教训，才适用
  *
  * @author zixi
