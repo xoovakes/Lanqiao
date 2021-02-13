@@ -27,7 +27,7 @@ public class Others {
      */
     public static int findDigitsOfNumber(int number) {
         int result = 0;
-        while (number / 10 != 0) {
+        while (number!= 0) {
             result++;
             number /= 10;
         }
