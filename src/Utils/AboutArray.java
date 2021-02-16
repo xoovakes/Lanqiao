@@ -105,6 +105,16 @@ public class AboutArray {
     }
 
     /**
+     * 打印二维整数数组
+     * @param matrix 要打印的二维整数数组
+     */
+    public static void printTwoDimensionalIntArray(int[][] matrix){
+        for (int[] ints : matrix) {
+            System.out.println(Arrays.toString(ints));
+        }
+    }
+
+    /**
      * 交换数组中的元素
      *
      * @param arr 数组
