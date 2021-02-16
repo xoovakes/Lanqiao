@@ -2,7 +2,7 @@ package AlgorithmIsSoBeautiful._4_矩阵;
 
 /**
  * _4_4_边界为1的最大子矩阵
- * TODO findLargestSubMatrix2-预处理
+ * TODO findLargestSubMatrix2-预处理-怕写不完理解了就算了
  *
  * @author zixi
  * @version 1.0
@@ -23,6 +23,7 @@ public class _4_4_边界为1的最大子矩阵 {
         System.out.println(k);
     }
 
+    //怕写不完理解了就算了
     public int findLargestSubMatrix2(int[][] matrix, int N) {
         return 0;
     }
