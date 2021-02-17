@@ -16,10 +16,10 @@ public class _4_2_零所在行列清零 {
                 {13, 14, 15, 0, 24},
                 {25, 26, 27, 28, 29}
         };
-        Utils.AboutArray.printTwoDimensionalIntArray(matrix);
+        Utils.AboutArray.printTwoDimensionalArray(matrix);
         System.out.println("-----------------");
         new _4_2_零所在行列清零().clearZeros(matrix);
-        Utils.AboutArray.printTwoDimensionalIntArray(matrix);
+        Utils.AboutArray.printTwoDimensionalArray(matrix);
     }
 
     private void clearZeros(int[][] matrix) {

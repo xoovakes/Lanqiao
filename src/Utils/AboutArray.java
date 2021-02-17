@@ -67,6 +67,7 @@ public class AboutArray {
 
     /**
      * 找出数组中的最大值
+     *
      * @param arr 数组
      * @return 最大值
      */
@@ -82,6 +83,7 @@ public class AboutArray {
 
     /**
      * 找出数组中的最小值
+     *
      * @param arr 数组
      * @return 最小值
      */
@@ -105,11 +107,19 @@ public class AboutArray {
     }
 
     /**
+     * printTwoDimensionalArray
      * 打印二维整数数组
+     *
      * @param matrix 要打印的二维整数数组
      */
-    public static void printTwoDimensionalIntArray(int[][] matrix){
+    public static void printTwoDimensionalArray(int[][] matrix) {
         for (int[] ints : matrix) {
+            System.out.println(Arrays.toString(ints));
+        }
+    }
+
+    public static void printTwoDimensionalArray(long[][] matrix) {
+        for (long[] ints : matrix) {
             System.out.println(Arrays.toString(ints));
         }
     }
