@@ -4,7 +4,8 @@
 
 ## 1.1 算法很美(AlgorithmIsSoBeautiful)
 
-先练内功，再练武功
+先练内功，再练武功  
+[这里有笔记](https://github.com/zimo999mrx/Lanqiao/blob/master/src/AlgorithmIsSoBeautiful/Notes.md) - 感谢csdn大佬``` xcsxchen ```的分享
 
 - [x] 1 位运算
 - [x] 2 查找、排序(初级)
