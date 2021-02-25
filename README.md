@@ -1,6 +1,8 @@
 # Lanqiao
 
-蓝桥杯刷题用
+蓝桥杯刷题用  
+以为放假在家会学一下习，结果还是太懒了，一个月没看完视频![img.png](image/img.png)  
+
 
 ## 1.1 算法很美(AlgorithmIsSoBeautiful)
 
