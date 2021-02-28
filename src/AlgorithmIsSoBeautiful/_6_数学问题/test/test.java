@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._6_数学问题;
+package AlgorithmIsSoBeautiful._6_数学问题.test;
 
 /**
  * test
