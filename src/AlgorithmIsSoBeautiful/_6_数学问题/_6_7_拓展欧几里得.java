@@ -1,13 +1,13 @@
 package AlgorithmIsSoBeautiful._6_数学问题;
 
 /**
- * _6_7_一步之遥
+ * _6_7_拓展欧几里得
  *
  * @author zixi
  * @version 1.0
  * @date 21/02/28 上午 1:31
  */
-public class _6_7_一步之遥 {
+public class _6_7_拓展欧几里得 {
     public static long x;
     public static long y;
 
