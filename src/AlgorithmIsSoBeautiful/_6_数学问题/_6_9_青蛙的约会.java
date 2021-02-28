@@ -5,7 +5,6 @@ import java.util.Scanner;
 /**
  * _6_9_青蛙的约会
  * 知识点，求解同余方程
- * // TODO: 21/02/28 有空多看几眼，不是很懂
  *
  * @author zixi
  * @version 1.0
