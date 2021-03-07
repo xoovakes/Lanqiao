@@ -9,7 +9,7 @@ package _刷题._临时放算法作业;
  */
 public class Exp1_国王分财产 {
     public static void main(String[] args) {
-        for (int i = 2; i < Integer.MAX_VALUE; i++) {
+        for (int i = 2; i < Integer.MAX_VALUE; i+=1) {
             int[] property = new int[i + 1];
             int k = getProperty(i, property);
             if (k != -1) {
