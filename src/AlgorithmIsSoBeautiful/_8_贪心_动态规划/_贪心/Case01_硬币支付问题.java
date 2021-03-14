@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._8_贪心_动态规划;
+package AlgorithmIsSoBeautiful._8_贪心_动态规划._贪心;
 
 import java.util.Scanner;
 
