@@ -20,24 +20,25 @@ public class _2_7_二分查找 {
         computingTime.end();
         //查找
         _2_7_二分查找 c = new _2_7_二分查找();
-        int e = c.binarySearch1(arr,0,len,22);
-        if(e!=-1){
+        int e = c.binarySearch1(arr, 0, len, 22);
+        if (e != -1) {
             System.out.println("找到了");
-        }else{
+        } else {
             System.out.println("没找到");
         }
     }
-    public int binarySearch1(int[] arr,int low,int high,int key){
-        if(low>high){
+
+    public int binarySearch1(int[] arr, int low, int high, int key) {
+        if (low > high) {
             return -1;
         }
-        int mid = low + ((low+high)>>1);
+        int mid = low + ((low + high) >> 1);
         int midVal = arr[mid];
-        if (midVal < key){
-            return binarySearch1(arr,mid+1,high,key);
-        }else if (midVal > key){
-            return binarySearch1(arr,low,mid-1,key);
-        }else {
+        if (midVal < key) {
+            return binarySearch1(arr, mid + 1, high, key);
+        } else if (midVal > key) {
+            return binarySearch1(arr, low, mid - 1, key);
+        } else {
             return mid;
         }
     }
