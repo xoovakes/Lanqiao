@@ -1,4 +1,4 @@
-package AlgorithmIsSoBeautiful._8_贪心_动态规划._背包问题;
+package AlgorithmIsSoBeautiful._8_贪心_动态规划;
 
 import java.util.Arrays;
 import java.util.Scanner;
