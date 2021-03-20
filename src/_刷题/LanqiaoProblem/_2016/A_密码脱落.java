@@ -1,4 +1,4 @@
-package _刷题._蓝桥杯历届题目;
+package _刷题.LanqiaoProblem._2016;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ import java.util.Scanner;
  * @version 1.0
  * @date 21/02/18 下午 11:09
  */
-public class _2016第7届_密码脱落 {
+public class A_密码脱落 {
 }
 
 class Main {
