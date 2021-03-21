@@ -1,4 +1,4 @@
-package _刷题.LanqiaoProblem._2016;
+package _刷题.LanqiaoBei._2016;
 
 import java.util.Scanner;
 

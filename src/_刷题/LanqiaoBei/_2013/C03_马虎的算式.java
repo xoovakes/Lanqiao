@@ -1,4 +1,4 @@
-package _刷题.LanqiaoProblem._2013;
+package _刷题.LanqiaoBei._2013;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 
  */
 
-public class B02_马虎的算式 {
+public class C03_马虎的算式 {
 	// 题目:
 	// 小明是个急性子，上小学的时候经常把老师写在黑板上的题目抄错了。
 	// 有一次，老师出的题目是：36 x 495 = ?
@@ -23,26 +23,7 @@ public class B02_马虎的算式 {
 	// 满足乘法交换律的算式计为不同的种类，所以答案肯定是个偶数。
 	// 答案直接通过浏览器提交。
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int ans = 0;
-		for (int a = 1; a <= 9; a++)
-			for (int b = 1; b <= 9; b++)
-				if (!(b == a))
-					for (int c = 1; c <= 9; c++)
-						if (!(c == a || c == b))
-							for (int d = 1; d <= 9; d++)
-								if (!(d == a || d == b || d == c))
-									for (int e = 1; e <= 9; e++)
-										if (!(e == a || e == b || e == c || e == d))
-											if ((a * 10 + b) * (c * 100 + d * 10 + e) == (a * 100 + d * 10 + b)
-													* (c * 10 + e)) {
-												//test
-												System.out.println(a + b + "x" + c + d + e + "=" + a + d + b + "x" + c
-														+ e + "==" + (a * 10 + b) * (c * 100 + d * 10 + e) + "=="
-																+ (a * 100 + d * 10 + b) * (c * 10 + e));
-												ans++;
-											}
-		System.out.println(ans);
+		B02_马虎的算式.main(args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package _刷题.LanqiaoProblem._2013;
+package _刷题.LanqiaoBei._2013;
 
 /**
  * B05_有理数类
