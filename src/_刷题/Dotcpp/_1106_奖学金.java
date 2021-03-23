@@ -54,7 +54,12 @@ public class _1106_奖学金 {
 		public int compareTo(Score o) {
 			int x = o.getTotal() - this.getTotal();
 			if (x == 0) {
-				return this.getId() - o.getId();
+				int y = o.a - this.a;
+				if (y == 0) {
+					return this.getId() - o.getId();
+				} else {
+					return y;
+				}
 			} else {
 				return x;
 			}
