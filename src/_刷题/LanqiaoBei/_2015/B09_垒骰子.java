@@ -15,7 +15,7 @@ public class B09_垒骰子 {
 		for (int i = 1; i <= im.length; i++) {
 			im[i] = sc.nextInt();
 		}
-		// 输入完毕
-
+		// 排列组合
+		// TODO: 刷题没刷完,21/03/27
 	}
 }
