@@ -3,9 +3,8 @@ package AlgorithmIsSoBeautiful._1_位运算;
 import java.util.Scanner;
 
 /**
- * TODO: 除法没看懂
  * _1_9_课后作业_位运算做加减乘除
- * 整数的,
+ * 整数的,除法没看懂
  * reference: https://www.cnblogs.com/kiven-code/archive/2012/09/15/2686922.html
  *
  * @author zixi

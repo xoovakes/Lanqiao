@@ -2,7 +2,7 @@ package AlgorithmIsSoBeautiful._2_查找_排序_初级;
 
 /**
  * 高效求a的n次幂
- * TODO 没考虑负数幂的情况
+ * 没考虑负数幂的情况
  *
  * @author zixi
  * @version 1.0

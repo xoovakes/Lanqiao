@@ -4,6 +4,6 @@ package _刷题.lx_LanqiaoBei;
 
 public class ALGO_246 {
 	public static void main(String[] args) {
-		// TODO 21/03/27
+		// TODO: 刷题没刷完,21/03/27
 	}
 }

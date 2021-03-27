@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class _1106_奖学金 {
 	// 用面向对象简单很多
-	// TODO:21/03/22 漏了排语文的成绩了
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();

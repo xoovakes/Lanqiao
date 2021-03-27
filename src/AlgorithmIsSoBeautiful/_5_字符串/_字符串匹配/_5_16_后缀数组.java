@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * _5_16_后缀数组
  * 我还怀疑是不是自己的能力问题，结果是真的难,难度很高，A组水平
- * TODO 就写了一半太难了
+ * TODO 就写了一半太难了(算法很美)
  *
  * @author zixi
  * @version 1.0

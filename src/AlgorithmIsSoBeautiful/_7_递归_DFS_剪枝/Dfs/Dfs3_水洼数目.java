@@ -35,7 +35,8 @@ public class Dfs3_水洼数目 {
         int cnt = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                // TODO: 21/03/09 感觉代码的思路是没问题的，但是报错了：Index 0 out of bounds for length 0
+                // 感觉代码的思路是没问题的，但是报错了：Index 0 out of bounds for length 0
+                // 全局变量的问题
                 if (a[i][j] == 'W') {
                     dfs(a, i, j); //清除一个水洼
                     cnt++;

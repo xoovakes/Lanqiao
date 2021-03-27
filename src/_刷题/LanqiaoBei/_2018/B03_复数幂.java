@@ -74,7 +74,7 @@ public class B03_复数幂 {
 			// test - -5+12i - 122-597i
 			System.out.println(result1 + " " + result2 + " " + pfs1 + " " + pfs2);
 			n >>= 1;
-		} // TODO 21/03/27
+		} // TODO 刷题没刷完,21/03/27
 		return new long[] { result1, result2 };
 	}
 

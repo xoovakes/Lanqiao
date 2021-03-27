@@ -9,7 +9,7 @@ package AlgorithmIsSoBeautiful._6_数学问题;
  */
 public class _6_13_埃氏筛法 {
     public static void main(String[] args) {
-        // TODO: 21/03/01 数据跟老师的不一样
+        // 数据跟老师的不一样
         m1(100000);
         System.out.println(Integer.MAX_VALUE);
     }

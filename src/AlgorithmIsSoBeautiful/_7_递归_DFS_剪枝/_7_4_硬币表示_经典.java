@@ -18,7 +18,7 @@ public class _7_4_硬币表示_经典 {
     }
 
     //countWays1 和 countWays2 都是递推解法
-    // TODO: 21/03/02 两个递推不是很懂,后面讲动态规划应该会动一点
+    //两个递推不是很懂,后面讲动态规划应该会动一点。刷多点题就理解了
     private static int countWays2(int n) {
         int[] coins = {1, 5, 10, 25};
         int[] dp = new int[n + 1];
