@@ -49,7 +49,6 @@ public class B03_复数幂 {
 		}
 		char[] str3 = s.toString().toCharArray();
 		c = toLong(str3);
-		// test - (2+3i)^2 - 2 3 2
 		System.out.println(a + " " + b + " " + c);
 		// 快速幂运算
 		long[] ans = new long[2];
@@ -57,25 +56,33 @@ public class B03_复数幂 {
 		System.out.println("result: " + ans[0] + " " + ans[1] + "i");
 	}
 
+	// test - (2+3i)^2 - -5+12i
+	// test - (2+3i)^5 - 122-597i
+	// (2+3i)^123456
 	private static long[] pow(long n) {
-		long pfs1 = a;
-		long pfs2 = b;
-		long result1 = 1;
-		long result2 = 1;
+		long res1 = 1, res2 = 1;
+		long pfs1 = a, pfs2 = b;
+		boolean change = false;
 		while (n != 0) {
 			if ((n & 1) == 1) {
-				long result1_1 = result1;
-				result1 = pfs1 * result1 - pfs2 * result2;
-				result2 = result1_1 * pfs2 + result2 * pfs1;
+				if (!change) {
+					res1 = pfs1;
+					res2 = pfs2;
+					change = true;
+				} else {
+					long t2 = res1 * pfs1 - res2 * pfs2;
+					res2 = res1 * pfs2 + res2 * pfs1;
+					res1 = t2;
+					System.out.println(res1 + " " + res2);
+				}
 			}
-			long pfs1_1 = pfs1;
-			pfs1 = pfs1 * pfs1 - pfs2 * pfs2;
-			pfs2 = 2 * pfs1_1 * pfs2;
-			// test - -5+12i - 122-597i
-			System.out.println(result1 + " " + result2 + " " + pfs1 + " " + pfs2);
+			long t1 = pfs1 * pfs1 - pfs2 * pfs2;
+			pfs2 = 2 * pfs1 * pfs2;
+			pfs1 = t1;
+			System.out.println(pfs1 + " " + pfs2);
 			n >>= 1;
-		} // TODO: 刷题没刷完,21/03/17
-		return new long[] { result1, result2 };
+		}
+		return new long[] { res1, res2 };
 	}
 
 	private static long toLong(char[] arr) {

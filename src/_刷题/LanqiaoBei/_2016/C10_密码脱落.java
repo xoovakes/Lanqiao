@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.0
  * @date 21/02/18 下午 11:09
  */
-public class A_密码脱落 {
+public class C10_密码脱落 {
 
 	private static String A;
 	private static String backA;
