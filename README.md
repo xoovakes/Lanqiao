@@ -1,5 +1,7 @@
 # Lanqiao
 
+有大佬已经把代码写完了，[点这里](https://github.com/Dxoca/Algorithm_LanQiao)
+
 ## 1.1 算法很美(AlgorithmIsSoBeautiful)
 
 先练内功，再练武功  
@@ -13,7 +15,7 @@
 - [x] 5 字符串
 - [x] 6 数学问题
 - [x] 7 递归、DFS、剪枝
-- [ ] 8 贪心、动态规划
+- [x] 8 贪心、动态规划
 
 ## 1.2 刷题
 
