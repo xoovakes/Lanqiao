@@ -2,7 +2,9 @@ package _刷题.LanqiaoBei._2015;
 
 import java.util.Scanner;
 
-// https://www.dotcpp.com/oj/problem2261.html
+/**
+ * https://www.dotcpp.com/oj/problem2261.html
+ */
 
 public class B09_垒骰子 {
 	private static int N;
@@ -16,6 +18,6 @@ public class B09_垒骰子 {
 			im[i] = sc.nextInt();
 		}
 		// 排列组合
-		// TODO: 刷题没刷完，21/03/27
+		// TODO: 21/03/30 刷题没刷完 
 	}
 }
