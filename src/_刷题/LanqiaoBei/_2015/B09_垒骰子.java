@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * https://www.dotcpp.com/oj/problem2261.html
+ * 也是用矩阵来快速幂运算
  */
 
 public class B09_垒骰子 {
