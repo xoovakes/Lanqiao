@@ -3,7 +3,12 @@ package _刷题.lx_LanqiaoBei;
 import java.util.Scanner;
 
 /**
+ * 题目：
  * http://lx.lanqiao.cn/problem.page?gpid=T776
+ * 为什么是这个矩阵：
+ * https://www.cnblogs.com/MMMMMMMW/p/12300262.html
+ * 懂了
+ * <p>
  * 与2014年A09_斐波那契类似
  * <p>
  * 题目:
@@ -35,6 +40,5 @@ public class ADV_375_翔集合 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
-        // TODO: 21/03/30 刷题没刷完 
     }
 }
