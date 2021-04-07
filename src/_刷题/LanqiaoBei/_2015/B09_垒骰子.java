@@ -19,6 +19,6 @@ public class B09_垒骰子 {
 			im[i] = sc.nextInt();
 		}
 		// 排列组合
-		// TODO: 21/03/30 刷题没刷完 
+		// TODO: 21/03/30 N
 	}
 }
