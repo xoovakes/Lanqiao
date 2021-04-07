@@ -39,12 +39,27 @@ public class B07_日期问题 {
         int mm = Integer.parseInt(m);
         int dd = Integer.parseInt(d);
         // 年
-        if(yy>=60)
-            yy+=1900;
+        if (yy >= 60)
+            yy += 1900;
         else
-            yy+=2000;
+            yy += 2000;
         // 月
-        // TODO: 21/04/07 N1 
+        if (isR(yy) && mm == 2 && dd > 0 && dd < 29) {
+            set.add(Integer.parseInt("" + yy + m + d));
+        }
+        if (!isR(yy) && mm == 2 && dd > 0 && dd < 28) {
+            set.add(Integer.parseInt("" + yy + m + d));
+        }
         // 日
+        if ((mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm == 12) && dd > 0 && dd <= 31) {
+            set.add(Integer.parseInt("" + yy + m + d));
+        }
+        if ((mm == 4 || mm == 6 || mm == 9 || mm == 11) && dd > 0 && dd <= 30) {
+            set.add(Integer.parseInt("" + yy + m + d));
+        }
+    }
+
+    private static boolean isR(int y) {
+        return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
     }
 }

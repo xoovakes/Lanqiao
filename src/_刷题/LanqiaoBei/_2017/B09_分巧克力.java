@@ -1,7 +1,9 @@
 package _刷题.LanqiaoBei._2017;
 
 /**
- * TODO N
+ * B09_分巧克力
+ * https://blog.csdn.net/weixin_44558280/article/details/114085911
+ * https://www.bilibili.com/video/BV1GE411F7Pj?p=490
  *
  * @author zixi
  * @version 1.0
