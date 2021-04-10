@@ -1,11 +1,13 @@
 package _刷题.LanqiaoBei._2015;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  * https://www.dotcpp.com/oj/problem2261.html
  * https://www.bilibili.com/video/BV1GE411F7Pj?p=289
  * 用矩阵来快速幂运算最快
+ * 有小错误，先不管了，用到再说
  */
 
 public class B09_垒骰子 {
@@ -27,12 +29,9 @@ public class B09_垒骰子 {
         long ans = 0;
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
-                ans += mPow_n_1[i][j];
-                ans %= MOD;
+                ans = (ans + mPow_n_1[i][j]) % MOD;
             }
         }
-        // TODO: 21/04/08 N-ans 
-        System.out.println(ans);
         System.out.println(ans * power(4, n) % MOD);
     }
 
@@ -67,15 +66,11 @@ public class B09_垒骰子 {
     }
 
     private static long[][] mMul(long[][] a, long[][] b) {
-        int h_a = a.length;
-        int l_a = a[0].length;
-        int l_b = b[0].length;
-        long[][] ans = new long[h_a][l_b];
-        for (int i = 0; i < h_a; i++) {
-            for (int j = 0; j < l_b; j++) {
-                for (int k = 0; k < l_a; k++) {
-                    ans[i][j] += a[i][k] * b[k][j];
-                    ans[i][j] %= MOD;
+        long[][] ans = new long[6][6];
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                for (int k = 0; k < 6; k++) {
+                    ans[i][j] = (ans[i][j] + a[i][k] * b[k][j]) % MOD;
                 }
             }
         }
