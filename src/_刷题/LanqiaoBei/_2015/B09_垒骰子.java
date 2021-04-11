@@ -1,81 +1,111 @@
 package _刷题.LanqiaoBei._2015;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  * https://www.dotcpp.com/oj/problem2261.html
  * https://www.bilibili.com/video/BV1GE411F7Pj?p=289
  * 用矩阵来快速幂运算最快
- * 有小错误，先不管了，用到再说
  */
 
 public class B09_垒骰子 {
-    static int[] op = new int[]{0, 4, 1, 5, 2, 6, 3};
-    static final long MOD = 1000000007;
+    static int[] op = new int[7];
+    static int n, m;
+    private static final long mod = 1000000000 + 7;
+
+    static void init() {
+        op[1] = 4;
+        op[2] = 5;
+        op[3] = 6;
+        op[4] = 1;
+        op[5] = 2;
+        op[6] = 3;
+    }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+        init();
+        Scanner reader = new Scanner(System.in);
+        n = reader.nextInt();
+        m = reader.nextInt();
         long conflict[][] = new long[6][6];
-        for (int i = 0; i < m; i++) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            conflict[op[a] - 1][b - 1] = 0;
-            conflict[op[b] - 1][a - 1] = 0;
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                conflict[i][j] = 1;
+            }
         }
+        //建立冲突矩阵
+        for (int i = 0; i < m; i++) {
+            int x = reader.nextInt();
+            int y = reader.nextInt();
+            conflict[op[x] - 1][y - 1] = 0;
+            conflict[op[y] - 1][x - 1] = 0;
+        }
+        //求冲突矩阵的n-1次方
         long[][] mPow_n_1 = mPow(conflict, n - 1);
+        //累加mPow_n_1矩阵
         long ans = 0;
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
-                ans = (ans + mPow_n_1[i][j]) % MOD;
+                ans = (ans + mPow_n_1[i][j]) % mod;
             }
         }
-        System.out.println(ans * power(4, n) % MOD);
+        System.out.println(ans * quick_Pow(4, n) % mod);
     }
 
-    private static long power(long i, int n) {
-        long ans = 1;
+    //求i的n次方快速幂
+    private static long quick_Pow(long i, int n) {
+        long ret = 1;
         while (n != 0) {
-            if ((n & 1) == 1) ans = (ans * i) % MOD;
-            i = i * i % MOD;
+            if ((n & 1) == 1) {
+                ret = (ret * i) % mod;
+            }
+            i = (i * i) % mod;
+            n >>= 1;
+        }
+        return ret;
+    }
+
+    /*
+     * 矩阵的快速幂
+     */
+    private static long[][] mPow(long[][] conflict, int n) {
+        long[][] ans = new long[6][6];
+
+        //单位矩阵：对角线为1 其余皆为0
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                if (i == j) {
+                    ans[i][j] = 1;
+                } else {
+                    ans[i][j] = 0;
+                }
+
+            }
+
+        }
+        while (n != 0) {
+            if ((n & 1) == 1) {//该位上为1 ans矩阵与conflict矩阵相乘
+                ans = mMul(ans, conflict);
+            }
+            conflict = mMul(conflict, conflict);
+            //n右移一位 除以2
             n >>= 1;
         }
         return ans;
+
     }
 
-    private static long[][] mPow(long[][] conflict, int n) {
-        long[][] e = new long[6][6];
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 6; j++) {
-                if (i == j)
-                    e[i][j] = 1;
-                else
-                    e[i][j] = 0;
-            }
-        }
-        while (n != 0) {
-            if ((n & 1) == 1) {
-                e = mMul(e, conflict);
-            }
-            conflict = mMul(conflict, conflict);
-            n >>= 1;
-        }
-        return e;
-    }
-
+    //矩阵乘法
     private static long[][] mMul(long[][] a, long[][] b) {
         long[][] ans = new long[6][6];
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
                 for (int k = 0; k < 6; k++) {
-                    ans[i][j] = (ans[i][j] + a[i][k] * b[k][j]) % MOD;
+                    ans[i][j] = (ans[i][j] + a[i][k] * b[k][j]) % mod;
                 }
             }
         }
         return ans;
     }
-
 
 }
