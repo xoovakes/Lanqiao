@@ -1,7 +1,7 @@
 package _刷题.LanqiaoBei._2016;
 
 /**
- * TODO N
+ * TODO B10_压缩变换
  *
  * @author zixi
  * @version 1.0
