@@ -27,14 +27,14 @@ package _刷题.LanqiaoBei._2019;
 import java.util.Scanner;
 
 /**
- * B01_组队
+ * A_组队
  *
  * @author zixi
  * @version 1.0
  * @date 21/04/16 下午 2:31
  */
 
-public class B01_组队 {
+public class A_组队 {
     private static int ans;
     private static int[] d = new int[6];
 
